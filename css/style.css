@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #4e658a;
+  --secondary-color: #4b968b;
+  --lightGrey-color: #d3d3d3;
+  --dark-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--lightGrey-color);
+  line-height: 1.4;
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+p {
+  
+}
+
