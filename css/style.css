@@ -1,9 +1,13 @@
 :root {
-  --primary-color: #4e658a;
+  --primary-color: #173c77;
   --secondary-color: #4b968b;
   --lightGrey-color: #d3d3d3;
   --dark-color: #333;
   --max-widht: 1120px;
+}
+
+.category {
+  --ai-color: #0444cf;
 }
 
 * {
@@ -13,9 +17,10 @@
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   background: var(--lightGrey-color);
   line-height: 1.4;
-  padding: 0 2rem;
 }
 
 a {
@@ -23,20 +28,140 @@ a {
   text-decoration: none;
 }
 
-p {
-  margin: 0.6rem 0;
+ul {
+  list-style: none;
 }
 
-#main-nav .nav-container{
+p {
+  margin: 1rem 0;
+}
+
+h1,
+h3,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+/* Utilities */
+.container {
   max-width: var(--max-widht);
   margin: auto;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 6fr 3fr 2fr;
 }
 
-#main-nav .nav-container img {
-  width: 120px;
+.current {
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.btn {
+  background: var(--primary-color);
+  padding: 1rem;
+  text-align:center;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.category {
+  display: inline-block;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  /* margin-left: 1rem; */
+  border-radius: 10px;
+}
+
+.category-AI {background: var(--ai-color);}
+
+/* Navigaiton */
+#main-nav {
+  background: #dedede;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  padding: 0 1rem; 
+  align-items: center;
+}
+#main-nav .container img 
+{
+  width: 100px;
   justify-content: start;
 }
+
+.social {
+  justify-self: center;
+}
+
+.social i {
+  color: #777;
+  margin-right: 0.6rem;
+  transition:all 0.3s ease-in-out ;
+}
+
+.social i:hover {
+  color: var(--primary-color);
+}
+
+#main-nav ul {
+  display: flex;
+  justify-self: end;
+}
+
+#main-nav ul li a {
+  padding: 1rem;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#main-nav ul li a:hover {
+  background: #777;
+}
+
+/* Header */
+
+#main-header {
+  color: #fff;
+  background: #333;
+  padding-top: 2rem;
+  position: relative;
+  
+}
+
+#main-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('/img/header.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#main-header .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#main-header .header-content {
+  z-index: 1;
+}
+
+#main-header .header-content p {
+  margin-bottom: 2rem;
+}
+
 
