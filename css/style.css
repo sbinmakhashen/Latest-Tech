@@ -45,6 +45,12 @@ h4 {
   margin-bottom: 0.6rem;
 }
 
+h3 {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 img {
   width: 100%;
 }
@@ -91,6 +97,8 @@ img {
 
 .bg-dark {background: #333 !important; color: #fff;}
 .bg-Primary {background: var(--primary-color) !important; color:#fff;}
+
+.btn-club {background: #a6ab0c;}
 
 /* Navigaiton */
 #main-nav {
@@ -184,7 +192,7 @@ img {
   display: grid;
   grid-template-columns:repeat(3, 1fr);
   grid-gap: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .grid {
@@ -216,5 +224,63 @@ img {
   color: #b8ff82;
 }
 
+/* Footer */
 
+#footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem 0;
+}
 
+#footer img{
+  width: 100px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1rem;
+}
+
+.footer-container h3 {
+  text-transform: uppercase;
+}
+
+.footer-container > *:last-child {
+  font-size: small;
+  grid-column: 1 / span 4;
+  width: 100%;
+  text-align: center;
+  background: #555;
+}
+
+#footer .footer-container ul li { 
+  padding: 0.6rem 0;
+  border-bottom: #777 1px dotted;
+}
+#footer .footer-container ul li a { 
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#footer .footer-container ul li a:hover { 
+  color: #b8ff82;
+}
+
+#footer .footer-container input[type='email'] {
+  padding: .5rem .7rem;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+#footer .footer-container input[type='button'] {
+  padding: .9rem .7rem;
+  cursor: pointer;
+  width: 90%;
+  border: none;
+}
+
+#footer .footer-container > *:nth-child(4) p {
+  width: 100%;
+  padding-bottom: 1rem;
+}
