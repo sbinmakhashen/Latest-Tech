@@ -80,6 +80,18 @@ img {
   opacity: 0.8;
 }
 
+.blue-logo {
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.blue-logo:hover {
+  color: var(--secondary-color);
+}
+.logo-footer {
+  color: var(--secondary-color);
+}
+
+
 .category {
   display: inline-block;
   color: #fff;
@@ -249,7 +261,11 @@ aside {
   color: #b8ff82;
 }
 
-/* Articles */
+.feat {
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+/* Articles page*/
 
 #articles .page-container .meta {
   display: flex;
